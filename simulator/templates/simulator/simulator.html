@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>COCOMO-II</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="/">COCOMO-II Simulator</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/simulator">Simulator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#footer">Made by:</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br><br><br>
+
+  <div class="container-fluid bg-3 text-center input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Enter KLOC</span>
+  </div>
+  <input type="text" class="form-control kloc" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+  <div class="container-fluid bg-3 text-center input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Enter Cost per person-month</span>
+  </div>
+  <input type="text" class="form-control cost" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+
+<div class="container-fluid bg-3 text-center">
+  <div class="bg-secondary container-fluid">
+    <h3>Scale Drivers</h3>
+  </div>
+  <div class="row">
+    {% for driver in drivers %}
+      {% if driver.type == 'Scale' %}
+          <br>
+        <div class="col-sm-3">
+        <br>
+          <p>{{ driver.title }}</p>
+          <select class="scale-driver browser-default custom-select">
+              <option value={{ driver.vlow }}>Very Low</option>
+              <option value={{ driver.low }}>Low</option>
+              <option value={{ driver.nom }} selected>Nominal</option>
+              <option value={{ driver.high }}>High</option>
+              <option value={{ driver.vhigh }}>Very High</option>
+              <option value={{ driver.ehigh }}>Extra High</option>
+          </select>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div><br><br>
+
+<div class="container-fluid bg-3 text-center">
+  <div class="bg-secondary container-fluid">
+    <h3>Cost Drivers</h3>
+  </div>
+  <div class="row">
+    {% for driver in drivers %}
+      {% if driver.type == 'Cost' %}
+            <br>
+        <div class="col-sm-3">
+        <br>
+          <p>{{ driver.title }}</p>
+          <select class="cost-driver browser-default custom-select">
+              <option value={{ driver.vlow }}>Very Low</option>
+              <option value={{ driver.low }}>Low</option>
+              <option value={{ driver.nom }} selected>Nominal</option>
+              <option value={{ driver.high }}>High</option>
+              <option value={{ driver.vhigh }}>Very High</option>
+              <option value={{ driver.ehigh }}>Extra High</option>
+          </select>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div><br><br>
+<div class="container-fluid bg-3 text-center input-group mb-3">
+<button type="submit" class="btn btn-primary btn-lg btn-block submit">Submit</button>
+</div>
+    <br><br>
+
+  <!-- Footer -->
+  <footer id="footer" class="py-5 bg-dark footer">
+    <div class="container">
+        <p class="m-0 text-center text-white">Made by: <a href="https://github.com/prateekj117">Prateek Jain</a></p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/static/vendor/jquery/jquery.min.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Custom JavaScript for this theme -->
+  <script src="/static/js/scrolling-nav.js"></script>
+  <script src="/static/js/calculation.js"></script>
+
+</body>
+
+</html>
