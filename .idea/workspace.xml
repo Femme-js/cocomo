@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7244e8bf-0f2e-46fc-9870-97df9955fdae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3271e934-5849-449c-8134-f0bc1ee98278.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/calculation.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/calculation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/templates/simulator/simulator.html" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/templates/simulator/simulator.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/calculation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="205">
+              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -214,17 +211,17 @@
       <option name="presentableId" value="Default" />
       <updated>1556542871878</updated>
       <workItem from="1556542875665" duration="33542000" />
-      <workItem from="1556606580793" duration="258000" />
+      <workItem from="1556606580793" duration="751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33800000" />
+    <option name="totallyTimeSpent" value="34293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="961" y="0" width="959" height="1080" extended-state="4" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.072289154" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3274918" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -418,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/calculation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        <state relative-caret-position="205">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
