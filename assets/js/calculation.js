@@ -29,9 +29,9 @@ $(function(){
           "</div>" + "<div class=\"container-fluid bg-3 text-center input-group mb-3\">\n" +
           "<input id='tcost' class=\"form-control\" type=\"text\" placeholder=\"Total Cost:\" readonly>\n" +
           "</div><br><br>" ).insertBefore( ".footer" );
-      $("#effort").val('Effort: ' + effort);
-      $("#time").val('Time of development: ' + time);
-      $("#tcost").val('Total cost: ' + tcost);
+      $("#effort").val('Effort: ' + effort + ' Person-Month');
+      $("#time").val('Time of development: ' + time + ' Months');
+      $("#tcost").val('Total cost: $' + tcost);
     });
 
 });
