@@ -1,5 +1,5 @@
 # COCOMO-II SIMULATOR
-### COCOMO-II Simulator made by Prateek Jain in guidance with Syed Usman Ahmed Sir.
+### COCOMO-II Simulator made by Prateek Jain in guidance with Prof. Syed Usman Ahmed Sir.
 
 The Project is based on COCOMO-II simulator, which is used to estimate the cost of software
 engineering. While software estimations may look straightforward in practice, but it is not in
